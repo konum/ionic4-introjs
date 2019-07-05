@@ -6,9 +6,9 @@ Ionic4 example with Intro.js.
 Just run `ng serve` and go to localhost:4200. Click Show Introjs button to display some tooltips.
 
 ## FIles modified 
-src/app/home/home.page.ts
-src/app/home/home.page.html
-src/app/app.scss
+* src/app/home/home.page.ts
+* src/app/home/home.page.html
+* src/app/app.scss
 
 ## Notes on making Intro.js working with ionic4
 The example is in home.page component.
