@@ -10,6 +10,20 @@ Just run `ng serve` and go to localhost:4200. Click Show Introjs button to displ
 * src/app/home/home.page.html
 * src/app/app.scss
 
+## Adding intro.js to your current project
+Run npm install intro.js @types/intro.js — save
+
+In your componet add:
+    import * as introJs from ‘intro.js/intro.js’;
+    
+    ....
+    ionViewWillEnter(){
+
+    introJs(document.querySelector(‘app-home’)).start();
+
+    }
+
+
 ## Notes on making Intro.js working with ionic4
 The example is in home.page component.
 
