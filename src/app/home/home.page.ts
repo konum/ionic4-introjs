@@ -11,7 +11,11 @@ export class HomePage {
   constructor() {}
 
   showHelp(){
-
-    introJs(document.querySelector('app-home')).start(); 
+    introJs(document.querySelector("app-home")).setOptions({
+      'nextLabel': 'Next step',
+      'prevLabel': 'Previous step',
+      'skipLabel': 'Don\'t bother me!',
+      'doneLabel': 'Finish'
+    }).start(); 
   }
 }
