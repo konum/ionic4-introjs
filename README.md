@@ -1,14 +1,25 @@
 # ionic4-introjs
 Ionic4 example with Intro.js.
 
-The key to make introJs work with Ionic 4 is to star it like this.
+## Run demo
 
- introJs(document.querySelector('app-home')).start(); 
+Just run `ng serve` and go to localhost:4200. Click Show Introjs button to display some tooltips.
+
+## FIles modified 
+src/app/home/home.page.ts
+src/app/home/home.page.html
+src/app/app.scss
+
+## Notes on making Intro.js working with ionic4
+The example is in home.page component.
+
+The key to make introJs work with Ionic 4 is to start it like this.
+
+ `introJs(document.querySelector('app-home')).start();`
 
 Where app-home is the selector of your component. This way introJs div's are created at component root, not at body root.
 
 On some ionic components (like ion-list) css property content: none must be set. Otherwise the component's children whont show over the tooltip overlay.
-
 
 Help number css must be modified so it doesnt go beyond screen edge. Set it in app.scss
 
