@@ -9,9 +9,17 @@ Just run `ng serve` and go to localhost:4200. Click Show Introjs button to displ
 * src/app/home/home.page.ts
 * src/app/home/home.page.html
 * src/app/app.scss
+* angular.json
 
 ## Adding intro.js to your current project
 Run npm install intro.js @types/intro.js — save
+
+Modigy angular.json   
+styles:[....
+{"input":  "node_modules/intro.js/introjs.css"}
+]
+
+scripts": [ "node_modules/intro.js/intro.js"],
 
 In your componet add:
     import * as introJs from ‘intro.js/intro.js’;
